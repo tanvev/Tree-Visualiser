@@ -1,0 +1,104 @@
+/* Minimal Dark Mode Theme */
+
+body {
+    font-family: 'Fira Code', monospace, Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #00CFFF; /* Electric cyan accent */
+    margin-bottom: 20px;
+}
+
+label, select, input {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+select, input {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    color: #E0E0E0;
+}
+
+select:focus, input:focus {
+    border-color: #00CFFF;
+    box-shadow: 0 0 8px #00CFFF;
+}
+
+button {
+    background-color: #00CFFF;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    margin: 10px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 207, 255, 0.5);
+}
+
+button:hover {
+    background-color: #0099cc;
+    box-shadow: 0 4px 10px rgba(0, 153, 204, 0.7);
+}
+
+.input-container, .traversal-container {
+    margin-top: 20px;
+}
+
+.traversal-container {
+    margin-top: 15px;
+}
+
+.traversal-container button {
+    margin: 5px 8px;
+}
+
+canvas {
+    border: 1px solid #333333;
+    background-color: #181818;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#rotationMessage {
+    color: #00CFFF;
+    font-weight: bold;
+    margin-top: 12px;
+    min-height: 24px;
+}
+
+#cppCode {
+    text-align: left;
+    background-color: #1E1E1E;
+    color: #A9B7C6;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Fira Code', monospace;
+    white-space: pre-wrap;
+    margin-top: 25px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.3);
+}
+
+#traversalOutput {
+    color: #00FFAB;
+    font-family: 'Fira Code', monospace;
+    margin-top: 20px;
+    font-size: 16px;
+}
