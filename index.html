@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Binary Tree Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Tree Visualizer</h1>
+
+        <label for="treeType">Select Tree Type:</label>
+        <select id="treeType" onchange="updateTreeType()">
+            <option value="bst">Binary Search Tree (BST)</option>
+            <option value="avl">AVL Tree</option>
+        </select>
+
+        <div class="input-container">
+            <label for="nodeValue">Value:</label>
+            <input type="number" id="nodeValue" />
+            <button id="insertBtn">Insert</button>
+            <button id="deleteBtn">Delete</button>
+            <button id="resetBtn">Reset Tree</button>
+            <button onclick="toggleBalanceFactors()">Toggle Balance Factors</button>
+        </div>
+
+        <div class="traversal-container">
+            <button onclick="startTraversal('inorder')">Inorder Traversal</button>
+            <button onclick="startTraversal('preorder')">Preorder Traversal</button>
+            <button onclick="startTraversal('postorder')">Postorder Traversal</button>
+            <button onclick="nextStep()">Next Step</button>
+        </div>
+
+        <p><b>Traversal Output:</b> <span id="traversalOutput"></span></p>
+
+        <canvas id="treeCanvas" width="800" height="600"></canvas>
+        <p id="rotationMessage"></p>
+
+        <h3>C++ Code:</h3>
+        <pre id="cppCode" class="cpp-code"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> \
